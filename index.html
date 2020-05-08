@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit5-02</title>
+  </head>
+  <body>
+    <h2>Enter an integer in the textbox below to see if it is negative or positive</h2>          
+    <input type="text" id="textbox">
+    <button id="button">Click me!</button>
+    <p id="demo"></p>
+    <script>
+    document.getElementById("button").addEventListener
+    ("click", myFunction)
+let number
+function myFunction() {
+number=document.getElementById("textbox").value;
+if (number>0) {
+    greeting="positive"
+  } else {
+ greeting="negative"
+}
+document.getElementById("demo").innerHTML=greeting
+}
+    </script>
+  </body>
+</html>
